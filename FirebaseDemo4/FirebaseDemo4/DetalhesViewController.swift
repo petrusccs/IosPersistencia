@@ -24,10 +24,10 @@ class DetalhesViewController: UIViewController {
     }
     private func preencheDados(user: User?){
         if user != nil {
-            lbNome.text = user?.givenName ?? ""
-            lbSobrenome.text = user?.familyName ?? ""
-            lbNomeCompleto.text = user?.fullName ?? ""
-            lbEmail.text = user?.email ?? ""
+            lbNome.text = "Nome: " + (user?.givenName ?? "")
+            lbSobrenome.text = "Sobrenome: " + (user?.familyName ?? "")
+            lbNomeCompleto.text = "Nome Completo: " + (user?.fullName ?? "")
+            lbEmail.text = "Email: " + (user?.email ?? "")
         }
     }
     
